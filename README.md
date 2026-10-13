@@ -2,7 +2,7 @@
 MAD Practical 8 – Hello World iOS App Using SwiftUI
 📱 Project Overview
 This project demonstrates how to create a basic iOS application using SwiftUI and the Swift programming language. The application displays a simple "Hello, world!" message on the screen.
-This practical is part of the Mobile Application Development coursework and introduces the basic structure of an iOS application using Xcode and SwiftUI.
+This practical is part of the Mobile Application Development MAD coursework and introduces the basic structure of an iOS application using Xcode and SwiftUI.
 🎯 Aim
 To create your first Hello World iOS application using SwiftUI.
 🛠️ Technologies Used
@@ -40,15 +40,20 @@ This folder can contain resources used for previewing the interface in Xcode.
 💻 Source Code
 
 1. Application Entry Point
+
+```swift
 import SwiftUI
+
 @main
 struct hello_worldApp: App {
-var body: some Scene {
-WindowGroup {
-ContentView()
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
 }
-}
-}
+
+```
 
 Explanation:
 
@@ -59,13 +64,18 @@ Explanation:
 * ContentView displays the main user interface.
 
 2. User Interface
+
+```swift
 import SwiftUI
+
 struct ContentView: View {
-var body: some View {
-Text("Hello, world!")
-.padding()
+    var body: some View {
+        Text("Hello, world!")
+            .padding()
+    }
 }
-}
+
+```
 
 Explanation:
 
